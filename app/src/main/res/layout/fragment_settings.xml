@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+
+        <!-- 도움말 -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="도움말" android:textSize="12sp" android:textColor="@color/gold_soft"
+            android:textStyle="bold" android:letterSpacing="0.08"
+            android:layout_marginTop="14dp" android:layout_marginBottom="8dp"/>
+
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="6dp"
+            app:cardCornerRadius="14dp" app:cardElevation="0dp" app:cardBackgroundColor="?attr/colorSurface">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout android:id="@+id/btn_usage" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:orientation="horizontal"
+                    android:gravity="center_vertical" android:padding="18dp"
+                    android:foreground="?attr/selectableItemBackground">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="사용법 보기"
+                        android:textSize="16sp" android:textColor="?attr/colorOnSurface"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="›" android:textSize="20sp" android:textColor="@color/ink_soft"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider"/>
+                <LinearLayout android:id="@+id/btn_log" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:orientation="horizontal"
+                    android:gravity="center_vertical" android:padding="18dp"
+                    android:foreground="?attr/selectableItemBackground">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="진단 로그 보기"
+                        android:textSize="16sp" android:textColor="?attr/colorOnSurface"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="›" android:textSize="20sp" android:textColor="@color/ink_soft"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 주보 링크 -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="주보 설정" android:textSize="12sp" android:textColor="@color/gold_soft"
+            android:textStyle="bold" android:letterSpacing="0.08"
+            android:layout_marginTop="14dp" android:layout_marginBottom="8dp"/>
+
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="14dp"
+            app:cardCornerRadius="14dp" app:cardElevation="0dp" app:cardBackgroundColor="?attr/colorSurface">
+            <LinearLayout android:id="@+id/btn_bulletin_url" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal"
+                android:gravity="center_vertical" android:padding="18dp"
+                android:foreground="?attr/selectableItemBackground">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="이번주 주보 링크 변경" android:textSize="16sp"
+                        android:textColor="?attr/colorOnSurface"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="북마크 탭에 표시될 주보 URL" android:textSize="12sp"
+                        android:textColor="@color/ink_soft" android:layout_marginTop="2dp"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="›" android:textSize="20sp" android:textColor="@color/ink_soft"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 앱 정보 -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="앱 정보" android:textSize="12sp" android:textColor="@color/gold_soft"
+            android:textStyle="bold" android:letterSpacing="0.08" android:layout_marginBottom="8dp"/>
+
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="14dp" app:cardElevation="0dp" app:cardBackgroundColor="?attr/colorSurface">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="18dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:paddingVertical="6dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="만든이" android:textSize="15sp"
+                        android:textColor="?attr/colorOnSurface"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="영찬영하 Daddy" android:textSize="15sp" android:textColor="@color/ink_soft"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:background="@color/divider" android:layout_marginVertical="4dp"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:paddingVertical="6dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="버전" android:textSize="15sp"
+                        android:textColor="?attr/colorOnSurface"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="2.0.0" android:textSize="15sp" android:textColor="@color/ink_soft"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:background="@color/divider" android:layout_marginVertical="4dp"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:paddingVertical="6dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="성경 데이터" android:textSize="15sp"
+                        android:textColor="?attr/colorOnSurface"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="개역개정 4판 · KJV" android:textSize="14sp"
+                        android:textColor="@color/ink_soft"/>
+                </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:background="@color/divider" android:layout_marginVertical="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="8dp"
+                    android:text="본 앱은 개인용으로만 사용합니다."
+                    android:textSize="12sp"
+                    android:textColor="@color/ink_soft"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-light" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

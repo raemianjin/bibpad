@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="indigo">#3A3E6E</color>
+    <color name="indigo_dark">#272A4E</color>
+    <color name="indigo_light">#4E5388</color>
+    <color name="gold">#C2963A</color>
+    <color name="gold_soft">#C2A263</color>
+    <color name="ink">#E8EAF6</color>
+    <color name="ink_soft">#5A6075</color>
+    <color name="white">#FFFFFF</color>
+    <color name="divider">#2A2D4A</color>
+    <color name="verse_highlight">#1A1E3E</color>
+</resources>
